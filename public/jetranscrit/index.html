@@ -42,6 +42,7 @@
         <a href="#demo">Aperçu</a>
         <a href="#fonctions">Fonctions</a>
         <a href="#faq">Questions</a>
+        <a href="#problemes">Aide</a>
       </nav>
       <a class="btn btn-donate btn-sm" href="/soutenir/?app=jetranscrit" data-wipe="#211a4e">
         <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.6 2.6.2.3.4.3.6 0 1-1.5 2.5-2.6 4.6-2.6 3.7 0 5.8 3.8 4.3 7.2C18.7 16.4 12 21 12 21Z"/></svg>
@@ -183,6 +184,110 @@
           <details data-reveal>
             <summary>Windows affiche « Windows a protégé votre ordinateur »</summary>
             <p>C'est normal pour une petite appli pas encore signée avec un certificat payant. Clique sur « Informations complémentaires », puis « Exécuter quand même ».</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="problemes" aria-labelledby="problems-title">
+      <div class="container faq-grid">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal>Aide</span>
+          <h2 class="section-title" id="problems-title" data-reveal style="--d:1">Si quelque chose ne marche pas.</h2>
+          <p class="section-lead" data-reveal style="--d:2">Chaque message d'erreur de jetranscrit renvoie ici. Toujours bloqué ? Écris-moi sur TikTok avec une capture de l'écran.</p>
+        </div>
+        <div class="faq-list">
+          <details data-reveal>
+            <summary>Les voix sont mal séparées</summary>
+            <p>Avant de lancer, indique le nombre de personnes qui parlent dans « Nombre de voix ». Après coup : clique sur la pastille d’une phrase pour changer sa voix, ou utilise « … » puis « Fusionner » sur une voix en trop.</p>
+          </details>
+          <details data-reveal>
+            <summary>Un mot revient mal écrit (un prénom, une marque)</summary>
+            <p>Utilise « Chercher » puis « Tout remplacer » en haut de la transcription.</p>
+          </details>
+          <details data-reveal>
+            <summary>La langue détectée est fausse</summary>
+            <p>Choisis la langue dans « Langue » sur l’accueil, puis relance la transcription.</p>
+          </details>
+          <details data-reveal>
+            <summary>C’est long</summary>
+            <p>Compte environ le tiers ou la moitié de la durée de la vidéo. Ferme les programmes lourds (jeux, montage en cours d’export). Si une seule personne parle, choisis « 1 voix » : c’est plus rapide.</p>
+          </details>
+          <details data-reveal>
+            <summary>Raccourcis</summary>
+            <p>Ctrl + Espace : lecture / pause. Entrée dans une phrase : la couper en deux. Retour arrière au début d’une phrase : la recoller à la précédente. Ctrl + F : chercher.</p>
+          </details>
+          <details data-reveal>
+            <summary>Le premier lancement télécharge environ 600 Mo</summary>
+            <p>C’est le moteur de transcription. Il est téléchargé une seule fois, puis tout marche sans internet (sauf les liens). Il faut environ 1,5 Go de place libre.</p>
+          </details>
+          <details data-reveal>
+            <summary>Plus assez de place sur ton disque</summary>
+            <p>jetranscrit a besoin d’environ 1,5 Go pour son moteur, plus à peu près 120 Mo par heure de vidéo. Libère de la place (vide la Corbeille, supprime de vieux rushs), puis relance.</p>
+          </details>
+          <details data-reveal>
+            <summary>Le moteur de transcription ne se télécharge pas</summary>
+            <p>Vérifie ta connexion à internet, puis relance. Si ça bloque encore, un antivirus ou un réseau d’entreprise / d’école bloque peut-être github.com : essaie avec une autre connexion (partage de connexion du téléphone).</p>
+          </details>
+          <details data-reveal>
+            <summary>Un composant de jetranscrit manque</summary>
+            <p>Ouvre le launcher justecoqqo, puis ouvre jetranscrit : il répare tout seul. Sinon, retélécharge jetranscrit depuis justecoqqo.fr.</p>
+          </details>
+          <details data-reveal>
+            <summary>Ce fichier n’a pas de son</summary>
+            <p>La vidéo ne contient pas de piste audio, ou le son est complètement muet. Vérifie que tu as choisi le bon fichier.</p>
+          </details>
+          <details data-reveal>
+            <summary>Ce fichier n’a pas pu être lu</summary>
+            <p>Le format n’est pas reconnu ou le fichier est abîmé (copie pas terminée, fichier d’iPhone encore sur iCloud…). Exporte ou convertis la vidéo en MP4, puis importe-la.</p>
+          </details>
+          <details data-reveal>
+            <summary>Ce projet CapCut est verrouillé</summary>
+            <p>CapCut chiffre certains projets (souvent ceux faits depuis un modèle). jetranscrit ne peut pas les lire : exporte la vidéo depuis CapCut, puis choisis « Importer une vidéo ».</p>
+          </details>
+          <details data-reveal>
+            <summary>Les vidéos du montage sont introuvables</summary>
+            <p>Les fichiers utilisés dans le montage ont été déplacés, renommés ou sont sur un disque débranché. Rebranche le disque ou ouvre le projet dans CapCut / Premiere pour relier les médias. Sinon, exporte la vidéo et importe-la.</p>
+          </details>
+          <details data-reveal>
+            <summary>Ce montage n’a pas de son</summary>
+            <p>Toutes les pistes sont muettes ou coupées. Vérifie le volume de tes clips dans le montage.</p>
+          </details>
+          <details data-reveal>
+            <summary>Ce projet Premiere Pro n’a pas pu être lu</summary>
+            <p>Certaines versions de Premiere enregistrent leurs projets autrement. Dans Premiere : Fichier › Exporter › Média, choisis un format audio (MP3 ou WAV), puis importe ce fichier dans jetranscrit.</p>
+          </details>
+          <details data-reveal>
+            <summary>Cette vidéo demande une connexion</summary>
+            <p>Elle est privée, réservée aux abonnés ou limitée par l’âge. Télécharge-la depuis ton compte, puis choisis « Importer une vidéo ».</p>
+          </details>
+          <details data-reveal>
+            <summary>Ce site n’est pas pris en charge</summary>
+            <p>Copie le lien de la vidéo elle-même (pas celui d’une page ou d’un profil). Si ça ne marche toujours pas, télécharge la vidéo et importe-la.</p>
+          </details>
+          <details data-reveal>
+            <summary>Cette vidéo n’est pas disponible</summary>
+            <p>Elle a été supprimée, mise en privé, ou est bloquée dans ton pays. Vérifie le lien dans ton navigateur.</p>
+          </details>
+          <details data-reveal>
+            <summary>Pas de connexion à internet</summary>
+            <p>Les liens et le premier téléchargement du moteur ont besoin d’internet. Les fichiers et projets déjà sur ton ordi, eux, marchent sans.</p>
+          </details>
+          <details data-reveal>
+            <summary>Pas assez de mémoire</summary>
+            <p>Le moteur a besoin d’environ 2 Go de mémoire libre. Ferme les programmes ouverts (navigateur avec beaucoup d’onglets, jeux, logiciel de montage), puis relance.</p>
+          </details>
+          <details data-reveal>
+            <summary>Le moteur de transcription s’est arrêté</summary>
+            <p>Relance la transcription. Si ça recommence, redémarre l’ordinateur. Un antivirus peut aussi bloquer le moteur : autorise jetranscrit dans ton antivirus.</p>
+          </details>
+          <details data-reveal>
+            <summary>Aucune parole trouvée</summary>
+            <p>Le son ne contient que de la musique, du bruit, ou une voix trop faible. Si c’est un montage, vérifie que la piste de voix n’est pas muette.</p>
+          </details>
+          <details data-reveal>
+            <summary>La transcription a été interrompue</summary>
+            <p>jetranscrit a été fermé (ou l’ordinateur s’est mis en veille) pendant la transcription. Relance-la depuis la vidéo : rien d’autre n’est perdu.</p>
           </details>
         </div>
       </div>

@@ -75,8 +75,8 @@
       "version": "1.0.0",
       "package": {
         "url": "/downloads/jetranscrit-1.0.0.tgz",
-        "sha256": "e85938e0aebf257a7f17af872a2880cdf80ce376e9dd995188e2b5020990c94b",
-        "size": 9287405
+        "sha256": "3a67372bcf69c8269eeabe9221679ff460827d0826863a85f2ca1958a584b000",
+        "size": 9294878
       },
       "components": [
         "ffmpeg",
