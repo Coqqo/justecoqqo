@@ -272,7 +272,7 @@ p {
   flex: none;
   width: var(--m);
   height: var(--m);
-  border-radius: calc(var(--m) * 0.31);
+  border-radius: 50%;
   /* Coqqo's portrait: the logo of justecoqqo */
   background: #d9d6d2 url('/assets/img/coqqo-128.jpg') center / cover no-repeat;
   box-shadow: 0 4px 12px -4px rgba(140, 100, 255, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.25);
