@@ -273,19 +273,9 @@ p {
   width: var(--m);
   height: var(--m);
   border-radius: calc(var(--m) * 0.31);
-  font-size: calc(var(--m) * 0.72);
-  background: linear-gradient(135deg, var(--iris-1) 0%, var(--iris-2) 52%, var(--iris-3) 100%);
-  box-shadow: 0 4px 12px -4px rgba(140, 100, 255, 0.6);
-}
-
-/* the "j" of justecoqqo */
-.brand-mark::before {
-  content: 'j';
-  font-family: var(--font-display);
-  font-weight: 800;
-  line-height: 1;
-  color: #fff;
-  translate: -0.04em -0.02em;
+  /* Coqqo's portrait: the logo of justecoqqo */
+  background: #d9d6d2 url('/assets/img/coqqo-128.jpg') center / cover no-repeat;
+  box-shadow: 0 4px 12px -4px rgba(140, 100, 255, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.25);
 }
 
 .brand-word {
