@@ -53,6 +53,54 @@
       ]
     },
     {
+      "id": "jetranscrit",
+      "name": "jetranscrit",
+      "tagline": "Transcris tes vidéos, voix par voix",
+      "page": "/jetranscrit/",
+      "status": "available",
+      "platforms": [
+        "win32-x64"
+      ],
+      "theme": {
+        "bg": "#1a1540",
+        "surface": "#231c52",
+        "surface2": "#2d2566",
+        "text": "#f5f2ec",
+        "mute": "#b4add8",
+        "accent": "#7a68ff",
+        "accent2": "#ffd84a",
+        "accent3": "#2fbf8f"
+      },
+      "icon": "/assets/img/jetranscrit-256.png",
+      "version": "1.0.0",
+      "package": {
+        "url": "/downloads/jetranscrit-1.0.0.tgz",
+        "sha256": "e85938e0aebf257a7f17af872a2880cdf80ce376e9dd995188e2b5020990c94b",
+        "size": 9287405
+      },
+      "components": [
+        "ffmpeg",
+        "yt-dlp"
+      ],
+      "slides": [
+        {
+          "image": "/assets/img/jetranscrit/slide-sources.webp",
+          "title": "CapCut, Premiere, fichier ou lien",
+          "text": "Choisis d'où vient ta vidéo, peu importe sa durée."
+        },
+        {
+          "image": "/assets/img/jetranscrit/slide-editeur.webp",
+          "title": "Chaque voix a son nom",
+          "text": "Corrige le texte, renomme les voix, réécoute n'importe quel passage."
+        },
+        {
+          "image": "/assets/img/jetranscrit/slide-export.webp",
+          "title": "Exporte tout ou une seule voix",
+          "text": "Texte, Word, sous-titres SRT : en un clic."
+        }
+      ]
+    },
+    {
       "id": "bientot",
       "name": "Bientôt",
       "tagline": "La prochaine appli arrive",
@@ -92,6 +140,37 @@
           "file": "ffmpeg",
           "sha256": "17c1ae10b52ac499180679fe6ba77e17642390c4eedb0f1e3b0ac045da55128f",
           "size": 28928723
+        }
+      }
+    },
+    "yt-dlp": {
+      "version": "2026.08.19",
+      "label": "Téléchargement des liens (yt-dlp)",
+      "license": "Unlicense",
+      "builds": {
+        "win32-x64": {
+          "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.08.19/yt-dlp.exe",
+          "file": "yt-dlp.exe",
+          "sha256": "66674953fe251b89f4d08c5f0e35e0728679bd67ab3d7d05c0562af101dd3e7a",
+          "size": 17840399
+        },
+        "darwin-arm64": {
+          "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.08.19/yt-dlp_macos",
+          "file": "yt-dlp",
+          "sha256": "0f192b7ec147ab6288885d6351d9ab67367640029b4377576ef46dd79cf7b202",
+          "size": 37146048
+        },
+        "darwin-x64": {
+          "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.08.19/yt-dlp_macos",
+          "file": "yt-dlp",
+          "sha256": "0f192b7ec147ab6288885d6351d9ab67367640029b4377576ef46dd79cf7b202",
+          "size": 37146048
+        },
+        "linux-x64": {
+          "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.08.19/yt-dlp_linux",
+          "file": "yt-dlp",
+          "sha256": "58162f9bfdc27458ea47bfcb311cf47028f17d8154a8bf7d689861d46399230a",
+          "size": 40446224
         }
       }
     }

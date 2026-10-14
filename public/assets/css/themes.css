@@ -23,3 +23,28 @@
   --shadow-lg: 0 30px 80px -30px rgba(0, 0, 0, 0.8);
   color-scheme: dark;
 }
+
+[data-app='jetranscrit'] {
+  --bg: #17123a;
+  --bg-deep: #100c2a;
+  --surface: #211a4e;
+  --surface-2: #2a2261;
+  --surface-3: #352c76;
+  --rule: rgba(232, 226, 255, 0.1);
+  --text: #f5f2ec;
+  --mute: #b4add8;
+  --faint: #7d76a8;
+  --accent: #ffd84a;
+  --accent-deep: #f2c21c;
+  --accent-2: #7a68ff;
+  --accent-3: #2fbf8f;
+  --on-accent: #17123a;
+  --wave: #e8e2ff;
+  --wave-low: #3d3478;
+  --glass: rgba(33, 26, 78, 0.62);
+  --donate: linear-gradient(115deg, #ff5f7e 0%, #ff7a8f 45%, #ffb36b 100%);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 16px 40px -16px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 30px 80px -30px rgba(0, 0, 0, 0.8);
+  color-scheme: dark;
+}
+

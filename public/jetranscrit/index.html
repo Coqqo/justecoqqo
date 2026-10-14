@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>jetranscrit · transcris tes vidéos voix par voix, gratuitement</title>
+  <meta name="description" content="jetranscrit écrit tout ce qui est dit dans tes vidéos et sépare chaque voix. Projets CapCut et Premiere Pro, fichiers ou liens YouTube et TikTok. Gratuit, sans compte, sur ton ordinateur.">
+  <link rel="canonical" href="https://justecoqqo.fr/jetranscrit/">
+  <meta name="theme-color" content="#17123a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="justecoqqo">
+  <meta property="og:title" content="jetranscrit · tes vidéos transcrites, voix par voix">
+  <meta property="og:description" content="Gratuit, sans compte, pour Windows. CapCut, Premiere Pro, fichier ou lien : tout le texte, chaque voix séparée.">
+  <meta property="og:url" content="https://justecoqqo.fr/jetranscrit/">
+  <meta property="og:image" content="https://justecoqqo.fr/assets/img/jetranscrit/slide-editeur.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/img/jetranscrit.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/img/jetranscrit-256.png">
+  <link rel="preload" href="/assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/themes.css">
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <link rel="stylesheet" href="/assets/css/jetranscrit.css">
+  <script src="/assets/js/boot.js"></script>
+  <script src="/assets/config.js"></script>
+  <script type="module" src="/assets/js/app-page.js"></script>
+  <script type="module" src="/assets/js/jetranscrit-demo.js"></script>
+</head>
+<body class="page-app" data-app="jetranscrit">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header on-dark" data-header="dark">
+    <div class="header-inner">
+      <a class="brand-pill" href="/" data-wipe="#eef1f7" aria-label="justecoqqo, toutes les applis">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-word">justecoqqo</span>
+      </a>
+      <nav class="header-nav" aria-label="Sur cette page">
+        <a href="#demo">Aperçu</a>
+        <a href="#fonctions">Fonctions</a>
+        <a href="#faq">Questions</a>
+      </nav>
+      <a class="btn btn-donate btn-sm" href="/soutenir/?app=jetranscrit" data-wipe="#211a4e">
+        <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.6 2.6.2.3.4.3.6 0 1-1.5 2.5-2.6 4.6-2.6 3.7 0 5.8 3.8 4.3 7.2C18.7 16.4 12 21 12 21Z"/></svg>
+        <span class="long">Faire un don</span><span class="short">Don</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="app-hero" aria-labelledby="app-title">
+      <canvas class="wave-field" aria-hidden="true"></canvas>
+      <div class="app-hero-glow" aria-hidden="true"></div>
+      <div class="container app-hero-grid">
+        <div class="app-media" data-reveal="scale">
+          <div class="device" data-tilt>
+            <div class="device-bar" aria-hidden="true"><i></i><i></i><i></i><span>jetranscrit</span></div>
+            <div class="device-screen">
+              <img class="app-shot" src="/assets/img/jetranscrit/slide-editeur.webp" alt="L'éditeur de jetranscrit : chaque phrase avec la voix qui la prononce" width="1600" height="1000">
+            </div>
+          </div>
+        </div>
+
+        <div class="app-info">
+          <div class="app-id" data-reveal>
+            <img class="app-icon" src="/assets/img/jetranscrit-256.png" alt="" width="72" height="72">
+            <span class="chip"><span class="dot"></span>CapCut · Premiere Pro · liens</span>
+          </div>
+          <h1 class="app-title" id="app-title" data-reveal style="--d:1">jetranscrit</h1>
+          <p class="app-lead" data-reveal style="--d:2">Tout ce qui est dit dans ta vidéo, écrit et rangé voix par voix.</p>
+          <p class="app-desc" data-reveal style="--d:3">Choisis un projet CapCut ou Premiere Pro, importe une vidéo de n'importe quelle durée, ou colle un lien YouTube, TikTok ou Instagram. jetranscrit écrit tout, repère chaque personne qui parle, et tu exportes le script entier ou une seule voix.</p>
+          <div class="app-actions" data-reveal style="--d:4">
+            <a class="btn btn-accent btn-lg" href="/downloads/jetranscrit-Setup.exe" data-download="jetranscrit-Setup.exe">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 19.5h14"/></svg>
+              <span class="btn-label">Télécharger<small>Windows 10 et 11 · gratuit</small></span>
+            </a>
+            <a class="btn btn-line btn-lg btn-support" href="/soutenir/?app=jetranscrit" data-wipe="#211a4e">
+              <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.6 2.6.2.3.4.3.6 0 1-1.5 2.5-2.6 4.6-2.6 3.7 0 5.8 3.8 4.3 7.2C18.7 16.4 12 21 12 21Z"/></svg>
+              Soutenir
+            </a>
+          </div>
+          <ul class="app-meta" role="list" data-reveal style="--d:5">
+            <li>Version <span data-app-version>1.0.0</span></li>
+            <li>Sans compte, sans limite de durée</li>
+            <li>Tout reste sur ton ordi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- A transcript writing itself, voice by voice -->
+    <section class="section demo jt-demo-section" id="demo" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow" data-reveal>Aperçu</span>
+          <h2 class="section-title" id="demo-title" data-reveal style="--d:1">Tu parles.<br>Ça s'écrit.</h2>
+        </div>
+        <div class="jt-demo" data-jt-demo data-reveal="scale">
+          <div class="jt-demo-bar" aria-hidden="true">
+            <span class="jt-dot"></span>
+            <span class="jt-wave" data-jt-wave></span>
+            <span class="jt-time" data-jt-time>0:00</span>
+          </div>
+          <ol class="jt-lines" data-jt-lines aria-live="off"></ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="fonctions" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal>Ce que ça fait</span>
+          <h2 class="section-title" id="features-title" data-reveal style="--d:1">D'où que vienne ta vidéo, tout le texte.</h2>
+        </div>
+        <div class="bento">
+          <article class="card card-wide" data-reveal data-spotlight>
+            <div class="card-art jt-art-sources" aria-hidden="true">
+              <span>CapCut</span><span>Premiere Pro</span><span>Fichier</span><span>Lien</span>
+            </div>
+            <h3>Quatre façons de commencer</h3>
+            <p>Tes projets CapCut et Premiere Pro apparaissent tout seuls : le montage est transcrit tel qu'on l'entend. Ou importe une vidéo, ou colle un lien YouTube, TikTok, Instagram, Vimeo…</p>
+          </article>
+          <article class="card card-wide" data-reveal data-spotlight style="--d:1">
+            <div class="card-art jt-art-voices" aria-hidden="true">
+              <span style="--c:#ff6b4a">Léa</span><span style="--c:#4a8bff">Hugo</span><span style="--c:#2fbf8f">Invitée</span>
+            </div>
+            <h3>Chaque voix séparée</h3>
+            <p>jetranscrit repère qui parle et crée un profil par voix. Renomme-les, fusionne deux voix, change la voix d'une phrase en un clic.</p>
+          </article>
+          <article class="card" data-reveal data-spotlight>
+            <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 20h4L19 9l-4-4L4 16v4zM13.5 6.5l4 4"/></svg></span>
+            <h3>Corrige comme dans un texte</h3>
+            <p>Clique, corrige, coupe une phrase avec Entrée. Chercher-remplacer pour les noms propres. Réécoute n'importe quel passage.</p>
+          </article>
+          <article class="card" data-reveal data-spotlight style="--d:1">
+            <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 19.5h14"/></svg></span>
+            <h3>Tout ou une seule voix</h3>
+            <p>Exporte le script entier ou seulement certaines voix : texte, Word, sous-titres SRT et VTT, tableur.</p>
+          </article>
+          <article class="card" data-reveal data-spotlight style="--d:2">
+            <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="11.5" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8.5 20h7M12 16.5V20"/></svg></span>
+            <h3>Sans limite, sans envoi</h3>
+            <p>La transcription tourne sur ton ordinateur : pas de minutes comptées, et tes vidéos ne partent nulle part.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal>Questions</span>
+          <h2 class="section-title" id="faq-title" data-reveal style="--d:1">Tu te demandes peut-être…</h2>
+        </div>
+        <div class="faq-list">
+          <details data-reveal>
+            <summary>C'est vraiment gratuit, même pour des vidéos longues ?</summary>
+            <p>Oui. Pas de compte, pas de pub, pas de minutes limitées. La transcription se fait sur ton ordinateur, donc elle ne coûte rien à faire tourner. Si jetranscrit t'aide, tu peux faire un don, mais rien ne t'y oblige.</p>
+          </details>
+          <details data-reveal>
+            <summary>Combien de temps ça prend ?</summary>
+            <p>Ça dépend de ton ordinateur. Sur un PC portable récent, compte à peu près le tiers ou la moitié de la durée de la vidéo. Tu vois le texte s'écrire en direct, et tu peux continuer à faire autre chose.</p>
+          </details>
+          <details data-reveal>
+            <summary>Pourquoi un téléchargement au premier lancement ?</summary>
+            <p>La première fois, jetranscrit télécharge son moteur de transcription (environ 600 Mo). Ensuite, tout fonctionne sans internet, sauf pour les liens.</p>
+          </details>
+          <details data-reveal>
+            <summary>Il reconnaît combien de voix ?</summary>
+            <p>Autant qu'il en entend. Si tu sais combien de personnes parlent, indique-le avant de lancer : la séparation des voix est encore plus juste. Tu peux toujours corriger ensuite.</p>
+          </details>
+          <details data-reveal>
+            <summary>Ça modifie mes projets CapCut ou Premiere ?</summary>
+            <p>Non. jetranscrit lit ton projet pour écouter le montage, mais ne l'écrit jamais.</p>
+          </details>
+          <details data-reveal>
+            <summary>Quelles langues ?</summary>
+            <p>Le français, l'anglais, l'espagnol, l'allemand, l'italien, le portugais et des dizaines d'autres. La langue est trouvée toute seule.</p>
+          </details>
+          <details data-reveal>
+            <summary>Windows affiche « Windows a protégé votre ordinateur »</summary>
+            <p>C'est normal pour une petite appli pas encore signée avec un certificat payant. Clique sur « Informations complémentaires », puis « Exécuter quand même ».</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section support-band" aria-labelledby="support-title">
+      <div class="container">
+        <div class="support-card" data-reveal="scale">
+          <div class="support-wave" aria-hidden="true"></div>
+          <h2 id="support-title">jetranscrit t'a évité des heures de saisie ?</h2>
+          <p>Soutiens le projet avec le montant que tu veux, dès 1&nbsp;€. Ça aide à créer la prochaine appli gratuite.</p>
+          <div class="support-actions">
+            <a class="btn btn-donate btn-lg" href="/soutenir/?app=jetranscrit" data-wipe="#211a4e">
+              <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.6 2.6.2.3.4.3.6 0 1-1.5 2.5-2.6 4.6-2.6 3.7 0 5.8 3.8 4.3 7.2C18.7 16.4 12 21 12 21Z"/></svg>
+              Soutenir le projet
+            </a>
+            <a class="btn btn-line btn-lg" href="/" data-wipe="#eef1f7">Voir les autres applis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="footer-brand" href="/"><span class="brand-mark" aria-hidden="true"></span>justecoqqo</a>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <a href="/applis/">Toutes les applis</a>
+        <a href="/soutenir/?app=jetranscrit">Soutenir</a>
+        <a href="#" data-tiktok target="_blank" rel="noopener">TikTok</a>
+        <a href="/mentions-legales/">Mentions légales</a>
+      </nav>
+      <p class="footer-note">© <span data-year></span> justecoqqo · jetranscrit est un projet indépendant. CapCut est une marque de ByteDance, Premiere Pro une marque d'Adobe ; jetranscrit n'y est ni affilié ni approuvé. Transcris uniquement des vidéos que tu as le droit d'utiliser.</p>
+    </div>
+  </footer>
+</body>
+</html>
