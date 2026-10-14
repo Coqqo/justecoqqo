@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "launcher": {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "page": "https://justecoqqo.fr/"
   },
   "apps": [
@@ -72,11 +72,11 @@
         "accent3": "#2fbf8f"
       },
       "icon": "/assets/img/jetranscrit-256.png",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "package": {
-        "url": "/downloads/jetranscrit-1.0.3.tgz",
-        "sha256": "4b181ad21c0b28f3eb6da9613211952f614a944a3a7eac4e54591a029a5d61f8",
-        "size": 9300158
+        "url": "/downloads/jetranscrit-1.0.4.tgz",
+        "sha256": "1b41d5d75cce9cea125132ab188bf814c1cf6d9f596436950937e6bf4f25483d",
+        "size": 9299969
       },
       "components": [
         "ffmpeg",
@@ -97,6 +97,54 @@
           "image": "/assets/img/jetranscrit/slide-export.webp",
           "title": "Exporte tout ou une seule voix",
           "text": "Texte, Word, sous-titres SRT : en un clic."
+        }
+      ]
+    },
+    {
+      "id": "to-mp34",
+      "name": "to mp34",
+      "tagline": "Télécharge une vidéo ou un son en un clic",
+      "page": "/to-mp34/",
+      "status": "available",
+      "platforms": [
+        "win32-x64"
+      ],
+      "theme": {
+        "bg": "#0e0f13",
+        "surface": "#16181e",
+        "surface2": "#1d2028",
+        "text": "#f2f3f5",
+        "mute": "#9198a8",
+        "accent": "#c8ff4d",
+        "accent2": "#ff5ca8",
+        "accent3": "#3de0e6"
+      },
+      "icon": "/assets/img/to-mp34-256.png",
+      "version": "1.0.0",
+      "package": {
+        "url": "/downloads/to-mp34-1.0.0.tgz",
+        "sha256": "3cb12d9be2fcc604f36bc74abc3b9b5ababb9a12ea1876aeb8188241008de3c8",
+        "size": 310738
+      },
+      "components": [
+        "ffmpeg",
+        "yt-dlp"
+      ],
+      "slides": [
+        {
+          "image": "/assets/img/to-mp34/slide-sites.webp",
+          "title": "YouTube, Instagram ou TikTok",
+          "text": "Choisis le site, colle le lien : c'est tout."
+        },
+        {
+          "image": "/assets/img/to-mp34/slide-qualite.webp",
+          "title": "Jusqu'à la 4K, ou le son en MP3",
+          "text": "La qualité proposée est celle de la vidéo : jamais plus, jamais moins."
+        },
+        {
+          "image": "/assets/img/to-mp34/slide-telechargement.webp",
+          "title": "Dans le dossier de ton choix",
+          "text": "Tu peux le retenir pour les prochaines fois."
         }
       ]
     },

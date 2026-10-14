@@ -1,0 +1,74 @@
+/* to mp34 page: the three steps and the quality pills */
+.tm-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tm-steps li {
+  position: relative;
+  padding: 14px 14px 22px;
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--rule), var(--shadow);
+}
+
+.tm-steps img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: inset 0 0 0 1px var(--rule);
+}
+
+.tm-step-n {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin: 18px 8px 0;
+  border-radius: 50%;
+  font-weight: 800;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.tm-steps h3 {
+  margin: 12px 8px 6px;
+  font-size: 20px;
+}
+
+.tm-steps p {
+  margin: 0 8px;
+  color: var(--mute);
+}
+
+.tm-art-q {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 10px;
+}
+
+.tm-art-q span {
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  background: var(--surface-3);
+  color: var(--mute);
+}
+
+.tm-art-q span.on {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+@media (max-width: 860px) {
+  .tm-steps {
+    grid-template-columns: 1fr;
+  }
+}

@@ -48,3 +48,28 @@
   color-scheme: dark;
 }
 
+[data-app='to-mp34'] {
+  --bg: #0e0f13;
+  --bg-deep: #08090c;
+  --surface: #16181e;
+  --surface-2: #1d2028;
+  --surface-3: #272b35;
+  --rule: rgba(242, 243, 245, 0.09);
+  --text: #f2f3f5;
+  --mute: #9198a8;
+  --faint: #626a7c;
+  --accent: #c8ff4d;
+  --accent-deep: #a8e021;
+  --accent-2: #ff5ca8;
+  --accent-3: #3de0e6;
+  --on-accent: #0e0f13;
+  --wave: #eef7d9;
+  --wave-low: #2f3a1f;
+  --glass: rgba(22, 24, 30, 0.62);
+  --donate: linear-gradient(115deg, #ff5ca8 0%, #ff7a8f 45%, #ffb36b 100%);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 16px 40px -16px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 30px 80px -30px rgba(0, 0, 0, 0.8);
+  color-scheme: dark;
+}
+
+

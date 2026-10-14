@@ -315,7 +315,7 @@
   border-radius: 999px;
   font-weight: 700;
   font-size: 16px;
-  color: #fff;
+  color: var(--app-on-accent, #fff);
   background: var(--app-accent);
   box-shadow: 0 14px 30px -12px color-mix(in srgb, var(--app-accent) 80%, transparent);
   transition: transform 0.4s var(--ease-out), gap 0.4s var(--ease-out);
