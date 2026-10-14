@@ -72,11 +72,11 @@
         "accent3": "#2fbf8f"
       },
       "icon": "/assets/img/jetranscrit-256.png",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "package": {
-        "url": "/downloads/jetranscrit-1.0.2.tgz",
-        "sha256": "0b22d074ec4b5171d749c3db5542e1b5c53f5dd4ce6773d473a1289cf48fe729",
-        "size": 9300202
+        "url": "/downloads/jetranscrit-1.0.3.tgz",
+        "sha256": "4b181ad21c0b28f3eb6da9613211952f614a944a3a7eac4e54591a029a5d61f8",
+        "size": 9300158
       },
       "components": [
         "ffmpeg",
