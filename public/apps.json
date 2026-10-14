@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "launcher": {
+    "version": "1.0.1",
+    "page": "https://justecoqqo.fr/"
+  },
+  "apps": [
+    {
+      "id": "capte-cut",
+      "name": "Capte Cut",
+      "tagline": "Supprime les blancs de tes montages CapCut",
+      "page": "/capte-cut/",
+      "status": "available",
+      "platforms": [
+        "win32-x64"
+      ],
+      "theme": {
+        "bg": "#0f1220",
+        "surface": "#151a2b",
+        "surface2": "#1c2237",
+        "text": "#eef1fb",
+        "mute": "#8e96b8",
+        "accent": "#ff4f6d",
+        "accent2": "#34d1b1",
+        "accent3": "#f4b54a"
+      },
+      "icon": "/assets/img/capte-cut-256.png",
+      "version": "1.0.4",
+      "package": {
+        "url": "/downloads/capte-cut-1.0.4.tgz",
+        "sha256": "b053c67da20c899f65086aa1f78564c40af467eb5ee95daa246752d1d4a61792",
+        "size": 268605
+      },
+      "components": [
+        "ffmpeg"
+      ],
+      "slides": [
+        {
+          "image": "/assets/img/capte-cut/slide-projets.webp",
+          "title": "Retrouve tes projets CapCut",
+          "text": "Capte Cut les trouve tout seul sur ton ordinateur."
+        },
+        {
+          "image": "/assets/img/capte-cut/slide-timeline.webp",
+          "title": "Les blancs sautent aux yeux",
+          "text": "Chaque silence est repéré sur ta timeline, piste par piste."
+        },
+        {
+          "image": "/assets/img/capte-cut/slide-apres.webp",
+          "title": "Un clic, et c'est coupé",
+          "text": "Recolle tout ou coupe seulement. Et tu peux toujours annuler."
+        }
+      ]
+    },
+    {
+      "id": "bientot",
+      "name": "Bientôt",
+      "tagline": "La prochaine appli arrive",
+      "status": "soon"
+    }
+  ],
+  "components": {
+    "ffmpeg": {
+      "version": "6.0",
+      "label": "Moteur audio (FFmpeg)",
+      "license": "GPL-3.0",
+      "builds": {
+        "win32-x64": {
+          "url": "https://github.com/eugeneware/ffmpeg-static/releases/download/b6.0/ffmpeg-win32-x64.gz",
+          "gzip": true,
+          "file": "ffmpeg.exe",
+          "sha256": "450d66226c79405c724e821f291cab0911e934bfa9fa2231adcab587f3e07b50",
+          "size": 28894894
+        },
+        "darwin-arm64": {
+          "url": "https://github.com/eugeneware/ffmpeg-static/releases/download/b6.0/ffmpeg-darwin-arm64.gz",
+          "gzip": true,
+          "file": "ffmpeg",
+          "sha256": "6be74d6f449889c2e87a75873894f8520cad56c08ac76f2a628d85b0519daaca",
+          "size": 19253088
+        },
+        "darwin-x64": {
+          "url": "https://github.com/eugeneware/ffmpeg-static/releases/download/b6.0/ffmpeg-darwin-x64.gz",
+          "gzip": true,
+          "file": "ffmpeg",
+          "sha256": "a12354fce7eb62361473bbe10d53a1893695babd35869ec8e92e5dfea8d0440b",
+          "size": 25067704
+        },
+        "linux-x64": {
+          "url": "https://github.com/eugeneware/ffmpeg-static/releases/download/b6.0/ffmpeg-linux-x64.gz",
+          "gzip": true,
+          "file": "ffmpeg",
+          "sha256": "17c1ae10b52ac499180679fe6ba77e17642390c4eedb0f1e3b0ac045da55128f",
+          "size": 28928723
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,442 @@
+/* Donation pages. Light iris by default, the colours of an app when coming from it (?app=…). */
+
+.page-support {
+  background: var(--bg);
+}
+
+[data-app] .page-support .grain,
+[data-app] .page-thanks .grain {
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+}
+
+.support {
+  position: relative;
+  min-height: 100svh;
+  padding: calc(var(--header-h) + clamp(36px, 7vh, 80px)) 0 clamp(60px, 10vh, 120px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.support-aura {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(34% 40% at 24% 30%, rgba(255, 122, 182, 0.2), transparent 70%),
+    radial-gradient(30% 36% at 70% 70%, rgba(102, 212, 255, 0.16), transparent 70%),
+    radial-gradient(30% 30% at 55% 20%, rgba(169, 139, 255, 0.18), transparent 70%);
+}
+
+[data-app] .support-aura {
+  background:
+    radial-gradient(36% 44% at 24% 32%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 70%),
+    radial-gradient(30% 36% at 72% 72%, color-mix(in srgb, var(--accent-2) 10%, transparent), transparent 70%);
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+}
+
+.support-intro {
+  display: grid;
+  justify-items: start;
+  gap: 20px;
+  padding-top: clamp(8px, 3vw, 40px);
+}
+
+.support-title {
+  font-size: clamp(40px, 5.4vw, 76px);
+  max-width: 14ch;
+}
+
+.accent-text {
+  background: var(--donate);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style: italic;
+  padding-right: 0.05em;
+}
+
+.support-lead {
+  max-width: 50ch;
+  font-size: clamp(17px, 1.5vw, 19px);
+  color: var(--mute);
+}
+
+.uses {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 560px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.use {
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.85), var(--shadow);
+}
+
+.use-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(140deg, #ff7ab6, #a98bff);
+}
+
+.use:nth-child(2) .use-icon { background: linear-gradient(140deg, #a98bff, #66d4ff); }
+.use:nth-child(3) .use-icon { background: linear-gradient(140deg, #66d4ff, #8fe3c8); }
+.use:nth-child(4) .use-icon { background: linear-gradient(140deg, #ffb86b, #ff7ab6); }
+
+.use-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.use b {
+  font-size: 16px;
+}
+
+.use span:last-child {
+  font-size: 14px;
+  color: var(--mute);
+  line-height: 1.4;
+}
+
+/* ------------------------------------------------------------------ donation card */
+
+.donate-card {
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+  padding: clamp(24px, 3vw, 36px);
+  border-radius: 32px;
+  background: var(--surface);
+  box-shadow: var(--shadow-lg), inset 0 0 0 1px var(--rule);
+}
+
+.donate-form {
+  display: grid;
+  gap: 18px;
+}
+
+.donate-form h2 {
+  font-size: 30px;
+  letter-spacing: -0.03em;
+}
+
+.amounts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.amount {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.amount input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.amount > span:not(.sr-only):not(.custom-field) {
+  display: grid;
+  place-items: center;
+  height: 64px;
+  border-radius: 18px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 23px;
+  letter-spacing: -0.02em;
+  background: var(--surface-2);
+  box-shadow: inset 0 0 0 1.5px var(--rule);
+  transition: transform 0.35s var(--ease-out), box-shadow 0.25s, background 0.25s, color 0.25s;
+}
+
+.amount:hover > span:not(.sr-only):not(.custom-field) {
+  transform: translateY(-2px);
+}
+
+.amount input:checked + span:not(.sr-only) {
+  background: var(--donate);
+  color: #fff;
+  box-shadow: 0 12px 26px -12px color-mix(in srgb, var(--accent) 85%, transparent);
+}
+
+.amount input:focus-visible + span,
+.custom-field:focus-within {
+  outline: 3px solid color-mix(in srgb, var(--accent) 70%, white);
+  outline-offset: 3px;
+}
+
+.amount-custom {
+  grid-column: 1 / -1;
+}
+
+.custom-field {
+  display: flex;
+  align-items: center;
+  height: 58px;
+  padding: 0 20px;
+  border-radius: 18px;
+  background: var(--surface-2);
+  box-shadow: inset 0 0 0 1.5px var(--rule);
+  transition: box-shadow 0.25s;
+}
+
+.amount-custom input[type='radio']:checked ~ .custom-field {
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.custom-field input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-weight: 650;
+  font-size: 18px;
+}
+
+.custom-field input::placeholder {
+  color: var(--faint);
+  font-weight: 550;
+}
+
+.custom-field b {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--mute);
+}
+
+.amount-hint {
+  margin-top: -8px;
+  font-size: 13.5px;
+  color: var(--faint);
+}
+
+.amount-hint.is-error {
+  color: #e5304f;
+  font-weight: 650;
+}
+
+.pay-area {
+  display: grid;
+  gap: 12px;
+}
+
+.pay-element:empty {
+  display: none;
+}
+
+.pay-off {
+  display: grid;
+  gap: 4px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: var(--surface-2);
+  box-shadow: inset 0 0 0 1px var(--rule);
+  font-size: 15px;
+}
+
+.pay-off span {
+  color: var(--mute);
+}
+
+.donate-submit {
+  width: 100%;
+  --btn-h: 62px;
+  font-size: 18px;
+}
+
+.donate-submit[aria-busy='true'] {
+  pointer-events: none;
+}
+
+.donate-submit[aria-busy='true'] .heart {
+  animation: beat 0.8s ease-in-out infinite;
+}
+
+.donate-submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.donate-msg {
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: rgba(229, 48, 79, 0.1);
+  color: #d42a48;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+[data-app] .donate-msg {
+  color: #ff8a9e;
+}
+
+.secure {
+  display: flex;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--faint);
+}
+
+.secure svg {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+}
+
+.back-link {
+  margin-left: auto;
+}
+
+[data-app] .back-link {
+  color: #fff;
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.2);
+  background: rgba(14, 15, 24, 0.42);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.back-link:not([hidden]) + * {
+  margin-left: 0;
+}
+
+/* ------------------------------------------------------------------ thank you page */
+
+.thanks {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  padding: calc(var(--header-h) + 40px) 0 80px;
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.confetti {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.thanks-card {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.thanks-badge {
+  width: 120px;
+  height: 120px;
+  border-radius: 34px;
+  display: grid;
+  place-items: center;
+  background: var(--donate);
+  box-shadow: 0 30px 60px -24px color-mix(in srgb, var(--accent) 80%, transparent);
+  color: #fff;
+  animation: pop-in 0.9s var(--ease-out) both;
+}
+
+.thanks-badge svg {
+  width: 52px;
+  height: 52px;
+}
+
+@keyframes pop-in {
+  from {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+}
+
+.thanks h1 {
+  font-size: clamp(46px, 7vw, 96px);
+}
+
+.thanks p {
+  max-width: 54ch;
+  font-size: 19px;
+  color: var(--mute);
+}
+
+.thanks-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+[data-app] .thanks .btn-line {
+  color: var(--text);
+  box-shadow: inset 0 0 0 1.5px rgba(223, 230, 255, 0.2);
+}
+
+/* ------------------------------------------------------------------ responsive */
+
+@media (max-width: 900px) {
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+  .donate-card {
+    position: static;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-support .header-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .uses {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .amounts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

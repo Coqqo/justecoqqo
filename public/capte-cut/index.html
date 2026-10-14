@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Capte Cut · supprime les blancs de tes montages CapCut, gratuitement</title>
+  <meta name="description" content="Capte Cut repère les silences de tes pistes et les retire directement dans ton projet CapCut. Gratuit, sans compte, pour Windows 10 et 11. Tutos vidéo inclus.">
+  <link rel="canonical" href="https://justecoqqo.fr/capte-cut/">
+  <meta name="theme-color" content="#0f1220">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="justecoqqo">
+  <meta property="og:title" content="Capte Cut · les blancs de tes montages CapCut, supprimés en un clic">
+  <meta property="og:description" content="Gratuit, sans compte, pour Windows. Choisis tes pistes, tes marges, et coupe.">
+  <meta property="og:url" content="https://justecoqqo.fr/capte-cut/">
+  <meta property="og:image" content="https://justecoqqo.fr/assets/img/og-capte-cut.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/img/capte-cut.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/img/capte-cut-256.png">
+  <link rel="preload" href="/assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/themes.css">
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <script src="/assets/js/boot.js"></script>
+  <script src="/assets/config.js"></script>
+  <script type="module" src="/assets/js/app-page.js"></script>
+</head>
+<body class="page-app" data-app="capte-cut">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header on-dark" data-header="dark">
+    <div class="header-inner">
+      <a class="brand-pill" href="/" data-wipe="#eef1f7" aria-label="justecoqqo, toutes les applis">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-word">justecoqqo</span>
+      </a>
+      <nav class="header-nav" aria-label="Sur cette page">
+        <a href="#fonctions">Fonctions</a>
+        <a href="#tutos">Tutos</a>
+        <a href="#faq">Questions</a>
+      </nav>
+      <a class="btn btn-donate btn-sm" href="/soutenir/?app=capte-cut" data-wipe="#151a2b">
+        <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.6 2.6.2.3.4.3.6 0 1-1.5 2.5-2.6 4.6-2.6 3.7 0 5.8 3.8 4.3 7.2C18.7 16.4 12 21 12 21Z"/></svg>
+        <span class="long">Faire un don</span><span class="short">Don</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- Presentation: video on the left, name, description and buttons on the right -->
+    <section class="app-hero" aria-labelledby="app-title">
+      <canvas class="wave-field" aria-hidden="true"></canvas>
+      <div class="app-hero-glow" aria-hidden="true"></div>
+      <div class="container app-hero-grid">
+        <div class="app-media" data-reveal="scale">
+          <div class="device" data-tilt>
+            <div class="device-bar" aria-hidden="true"><i></i><i></i><i></i><span>Capte Cut</span></div>
+            <div class="device-screen">
+              <video class="app-video" autoplay muted loop playsinline preload="metadata" poster="/assets/video/capte-cut/presentation.jpg">
+                <source src="/assets/video/capte-cut/presentation.mp4" type="video/mp4">
+              </video>
+              <button class="screen-btn" type="button" data-video-toggle aria-label="Mettre la vidéo en pause">
+                <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h3.2v14H7zM13.8 5H17v14h-3.2z"/></svg>
+                <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a.8.8 0 0 0 1.2.7l10.4-6.5a.8.8 0 0 0 0-1.4L9.2 4.8A.8.8 0 0 0 8 5.5Z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-info">
+          <div class="app-id" data-reveal>
+            <img class="app-icon" src="/assets/img/capte-cut-256.png" alt="" width="72" height="72">
+            <span class="chip"><span class="dot"></span>Pour CapCut sur ordinateur</span>
+          </div>
+          <h1 class="app-title" id="app-title" data-reveal style="--d:1">Capte Cut</h1>
+          <p class="app-lead" data-reveal style="--d:2">Les blancs de tes montages CapCut, supprimés en un clic.</p>
+          <p class="app-desc" data-reveal style="--d:3">Capte Cut écoute tes pistes, repère les silences et les retire directement dans ton projet CapCut. Tu choisis les pistes, la marge à garder avant et après la voix, et si tu veux tout recoller ou juste couper.</p>
+          <div class="app-actions" data-reveal style="--d:4">
+            <a class="btn btn-accent btn-lg" href="/downloads/Capte-Cut-Setup.exe" data-download="Capte-Cut-Setup.exe">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 19.5h14"/></svg>
+              <span class="btn-label">Télécharger<small>Windows 10 et 11 · gratuit</small></span>
+            </a>
+            <a class="btn btn-line btn-lg btn-support" href="/soutenir/?app=capte-cut" data-wipe="#151a2b">
+              <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.6 2.6.2.3.4.3.6 0 1-1.5 2.5-2.6 4.6-2.6 3.7 0 5.8 3.8 4.3 7.2C18.7 16.4 12 21 12 21Z"/></svg>
+              Soutenir
+            </a>
+          </div>
+          <a class="tuto-link" href="#tutos" data-reveal style="--d:5">
+            <span class="tuto-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a.8.8 0 0 0 1.2.7l10.4-6.5a.8.8 0 0 0 0-1.4L9.2 4.8A.8.8 0 0 0 8 5.5Z"/></svg></span>
+            <span><strong>Voir le tuto</strong><small>Installation et prise en main en vidéo</small></span>
+          </a>
+          <ul class="app-meta" role="list" data-reveal style="--d:6">
+            <li>Version <span data-app-version>1.0.4</span></li>
+            <li>Sans compte, sans pub</li>
+            <li>Tout reste sur ton ordi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before / after: a timeline in 3D whose blanks disappear -->
+    <section class="section demo" id="demo" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow" data-reveal>Avant · après</span>
+          <h2 class="section-title" id="demo-title" data-reveal style="--d:1">Les blancs sautent.<br>Ton rythme reste.</h2>
+        </div>
+        <div class="tl-scene" data-timeline>
+          <div class="tl-board">
+            <div class="tl-ruler" aria-hidden="true"></div>
+            <div class="tl-lane" data-lane="video"><span class="tl-tag">Vidéo 1</span><div class="tl-strip"></div></div>
+            <div class="tl-lane" data-lane="voice"><span class="tl-tag">Voix</span><div class="tl-strip"></div></div>
+            <div class="tl-lane" data-lane="music"><span class="tl-tag">Musique</span><div class="tl-strip"></div></div>
+            <div class="tl-ph-track" aria-hidden="true"><div class="tl-playhead"></div></div>
+          </div>
+        </div>
+        <div class="tl-controls">
+          <div class="segmented" role="group" aria-label="Afficher la timeline">
+            <button type="button" data-view="before" aria-pressed="true">Avant</button>
+            <button type="button" data-view="after" aria-pressed="false">Après</button>
+          </div>
+          <p class="tl-caption" aria-live="polite"><strong data-tl-count>0</strong> blancs repérés · <strong data-tl-saved>0 s</strong> en moins</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features" id="fonctions" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal>Ce que ça fait</span>
+          <h2 class="section-title" id="features-title" data-reveal style="--d:1">Pensé pour monter vite, sans rien casser.</h2>
+        </div>
+        <div class="bento">
+          <article class="card card-wide" data-reveal data-spotlight>
+            <div class="card-art art-lanes" aria-hidden="true">
+              <span class="lane on"><b>Voix</b><i></i></span>
+              <span class="lane on"><b>Vidéo 1</b><i></i></span>
+              <span class="lane"><b>Musique</b><i></i></span>
+            </div>
+            <h3>Tu choisis les pistes</h3>
+            <p>Écoute la voix, coupe la vidéo et la voix ensemble, laisse la musique tranquille. Plusieurs pistes à la fois, c'est toi qui décides.</p>
+          </article>
+          <article class="card card-wide" data-reveal data-spotlight style="--d:1">
+            <div class="card-art art-margins" aria-hidden="true">
+              <span class="m-wave"></span><span class="m-keep m-before"></span><span class="m-cut"></span><span class="m-keep m-after"></span><span class="m-wave"></span>
+            </div>
+            <h3>Des marges au poil</h3>
+            <p>Garde un petit souffle avant et après chaque phrase pour que le montage reste naturel, au centième de seconde près.</p>
+          </article>
+          <article class="card" data-reveal data-spotlight>
+            <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7h6m4 0h6M4 17h16M10 4v6m4-6v6"/></svg></span>
+            <h3>Recoller ou juste couper</h3>
+            <p>Supprime les blancs et recolle tout, ou coupe seulement pour trier à la main dans CapCut.</p>
+          </article>
+          <article class="card" data-reveal data-spotlight style="--d:1">
+            <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 14 4 9l5-5M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg></span>
+            <h3>Annuler en un clic</h3>
+            <p>Ton projet est sauvegardé avant chaque coupe. Un clic sur Annuler et tout revient comme avant.</p>
+          </article>
+          <article class="card" data-reveal data-spotlight style="--d:2">
+            <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="11.5" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8.5 20h7M12 16.5V20"/></svg></span>
+            <h3>Tout reste sur ton ordi</h3>
+            <p>Tes vidéos ne sont envoyées nulle part. Capte Cut trouve tes projets CapCut tout seul.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tutorials -->
+    <section class="section tutos" id="tutos" aria-labelledby="tutos-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal>Tutos</span>
+          <h2 class="section-title" id="tutos-title" data-reveal style="--d:1">Tout comprendre en vidéo.</h2>
+          <p class="section-lead" data-reveal style="--d:2">Choisis la vidéo que tu veux voir. Elles sont courtes, promis.</p>
+        </div>
+        <div class="tuto-filters" role="group" aria-label="Filtrer les tutos" data-reveal>
+          <button type="button" data-filter="all" aria-pressed="true">Toutes</button>
+          <button type="button" data-filter="installer" aria-pressed="false">Installer</button>
+          <button type="button" data-filter="utiliser" aria-pressed="false">Utiliser</button>
+          <button type="button" data-filter="tiktok" aria-pressed="false">Format TikTok</button>
+        </div>
+        <div class="tuto-layout" data-reveal>
+          <div class="player">
+            <div class="player-frame" data-format="wide">
+              <video class="player-video" controls playsinline preload="metadata"></video>
+            </div>
+            <div class="player-info">
+              <span class="player-step" data-player-step></span>
+              <h3 data-player-title>Chargement des tutos…</h3>
+              <p data-player-desc></p>
+            </div>
+          </div>
+          <ol class="playlist" role="list" data-playlist></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal>Questions</span>
+          <h2 class="section-title" id="faq-title" data-reveal style="--d:1">Tu te demandes peut-être…</h2>
+        </div>
+        <div class="faq-list">
+          <details data-reveal>
+            <summary>C'est vraiment gratuit ?</summary>
+            <p>Oui. Pas de compte, pas de pub, pas de version payante. Si Capte Cut t'aide, tu peux faire un don du montant que tu veux, mais rien ne t'y oblige.</p>
+          </details>
+          <details data-reveal>
+            <summary>Est-ce que ça peut abîmer mon projet ?</summary>
+            <p>Avant chaque coupe, Capte Cut garde une copie de ton projet. Le bouton « Annuler » le remet exactement comme avant, en un clic.</p>
+          </details>
+          <details data-reveal>
+            <summary>Il faut fermer CapCut ?</summary>
+            <p>Oui, au moment de couper : sinon CapCut réécrit le projet par-dessus. Capte Cut te prévient et attend tout seul que tu fermes le projet.</p>
+          </details>
+          <details data-reveal>
+            <summary>Windows affiche « Windows a protégé votre ordinateur »</summary>
+            <p>C'est normal pour une petite appli pas encore signée avec un certificat payant. Clique sur « Informations complémentaires », puis « Exécuter quand même ». Le tuto d'installation le montre.</p>
+          </details>
+          <details data-reveal>
+            <summary>Ça marche sur Mac, sur téléphone ou avec CapCut en ligne ?</summary>
+            <p>Pour l'instant, Capte Cut fonctionne avec CapCut sur ordinateur, sous Windows 10 et 11. La version Mac est prévue.</p>
+          </details>
+          <details data-reveal>
+            <summary>Mes vidéos sont envoyées sur internet ?</summary>
+            <p>Non. Tout se passe sur ton ordinateur. L'appli consulte seulement justecoqqo.fr pour savoir s'il existe une nouvelle version.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section class="section support-band" aria-labelledby="support-title">
+      <div class="container">
+        <div class="support-card" data-reveal="scale">
+          <div class="support-wave" aria-hidden="true"></div>
+          <h2 id="support-title">Capte Cut t'a fait gagner du temps ?</h2>
+          <p>Soutiens le projet avec le montant que tu veux, dès 1&nbsp;€. Ça aide à créer la prochaine appli gratuite.</p>
+          <div class="support-actions">
+            <a class="btn btn-donate btn-lg" href="/soutenir/?app=capte-cut" data-wipe="#151a2b">
+              <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.6 2.6.2.3.4.3.6 0 1-1.5 2.5-2.6 4.6-2.6 3.7 0 5.8 3.8 4.3 7.2C18.7 16.4 12 21 12 21Z"/></svg>
+              Soutenir le projet
+            </a>
+            <a class="btn btn-line btn-lg" href="/" data-wipe="#eef1f7">Voir les autres applis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="footer-brand" href="/"><span class="brand-mark" aria-hidden="true"></span>justecoqqo</a>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <a href="/applis/">Toutes les applis</a>
+        <a href="/soutenir/?app=capte-cut">Soutenir</a>
+        <a href="#" data-tiktok target="_blank" rel="noopener">TikTok</a>
+        <a href="/mentions-legales/">Mentions légales</a>
+      </nav>
+      <p class="footer-note">© <span data-year></span> justecoqqo · Capte Cut est un projet indépendant. CapCut est une marque de ByteDance ; Capte Cut n'y est ni affilié ni approuvé.</p>
+    </div>
+  </footer>
+</body>
+</html>

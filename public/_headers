@@ -1,0 +1,24 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(self "https://js.stripe.com" "https://*.js.stripe.com")
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://js.stripe.com https://*.js.stripe.com https://challenges.cloudflare.com; frame-src https://js.stripe.com https://*.js.stripe.com https://hooks.stripe.com https://link.com https://*.link.com https://challenges.cloudflare.com; connect-src 'self' https://api.stripe.com https://link.com https://*.link.com; img-src 'self' data: https://*.stripe.com https://*.link.com; style-src 'self' 'unsafe-inline'; font-src 'self'; media-src 'self'; worker-src 'self' blob:; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+/assets/fonts/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=2592000
+
+/assets/vendor/*
+  Cache-Control: public, max-age=2592000
+
+/assets/video/*
+  Cache-Control: public, max-age=86400
+
+/apps.json
+  Cache-Control: no-cache
+  Access-Control-Allow-Origin: *
+
+/capte-cut/version.json
+  Cache-Control: no-cache
+  Access-Control-Allow-Origin: *

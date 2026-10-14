@@ -1,0 +1,657 @@
+/* justecoqqo hub: hero video, app cards, steps, manifesto. */
+
+.page-hub {
+  background: var(--pearl);
+}
+
+.how {
+  background: radial-gradient(40% 38% at 85% 45%, rgba(169, 139, 255, 0.13), transparent 70%),
+    radial-gradient(32% 34% at 8% 55%, rgba(255, 122, 182, 0.09), transparent 70%);
+}
+
+/* ------------------------------------------------------------------ hero */
+
+.hero {
+  padding: 12px;
+  height: 100svh;
+  min-height: 640px;
+  max-height: 1180px;
+}
+
+.hero-stage {
+  position: relative;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(70% 60% at 70% 30%, #3a2a6b 0%, transparent 70%),
+    radial-gradient(60% 60% at 20% 80%, #5a1f45 0%, transparent 70%),
+    #0c0d16;
+  box-shadow: 0 40px 100px -40px rgba(40, 30, 90, 0.55);
+  color: #fff;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: hero-zoom 2.4s var(--ease-out) both;
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.08);
+    filter: blur(6px) brightness(0.7);
+  }
+}
+
+.hero-veil {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(to top, rgba(7, 8, 15, 0.86) 0%, rgba(7, 8, 15, 0.42) 38%, rgba(7, 8, 15, 0) 64%),
+    linear-gradient(to right, rgba(7, 8, 15, 0.55) 0%, rgba(7, 8, 15, 0) 55%),
+    linear-gradient(to bottom, rgba(7, 8, 15, 0.38) 0%, rgba(7, 8, 15, 0) 18%);
+}
+
+.hero-content {
+  position: absolute;
+  left: clamp(24px, 5vw, 72px);
+  right: clamp(24px, 5vw, 72px);
+  bottom: clamp(32px, 7vh, 84px);
+  display: grid;
+  justify-items: start;
+  gap: 22px;
+  max-width: 980px;
+}
+
+.chip-dark {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+}
+
+.chip-dark .dot {
+  background: #8fffd9;
+  box-shadow: 0 0 0 4px rgba(143, 255, 217, 0.2), 0 0 14px #8fffd9;
+}
+
+.hero-title {
+  font-size: clamp(44px, 6.6vw, 108px);
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: -0.035em;
+  max-width: 12.5ch;
+  text-shadow: 0 2px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero-title .iris-text {
+  background: linear-gradient(100deg, #ffa3cd, #c7b2ff 45%, #8fe3ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-style: italic;
+  font-weight: 650;
+  padding-right: 0.06em;
+}
+
+.hero-lead {
+  max-width: 540px;
+  font-size: clamp(16px, 1.45vw, 19px);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.video-toggle {
+  position: absolute;
+  right: clamp(18px, 3vw, 32px);
+  bottom: clamp(18px, 3vw, 32px);
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28);
+  transition: background 0.25s, transform 0.4s var(--ease-out);
+}
+
+.video-toggle:hover {
+  background: rgba(255, 255, 255, 0.26);
+  transform: scale(1.06);
+}
+
+.video-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.video-toggle .i-play,
+.video-toggle[data-state='paused'] .i-pause {
+  display: none;
+}
+
+.video-toggle[data-state='paused'] .i-play {
+  display: block;
+}
+
+.scroll-cue {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  width: 26px;
+  height: 42px;
+  margin-left: -13px;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.scroll-cue span {
+  position: absolute;
+  left: 50%;
+  top: 9px;
+  width: 4px;
+  height: 8px;
+  margin-left: -2px;
+  border-radius: 4px;
+  background: #fff;
+  animation: cue 2s var(--ease-in-out) infinite;
+}
+
+@keyframes cue {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+}
+
+/* ------------------------------------------------------------------ app cards */
+
+.apps {
+  padding-bottom: clamp(40px, 6vw, 80px);
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr);
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-card {
+  --app-bg: #ffffff;
+  --app-accent: var(--iris-2);
+  --app-accent2: var(--iris-3);
+  perspective: 1400px;
+}
+
+.app-card-link {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: 14px;
+  width: 100%;
+  height: 100%;
+  min-height: 540px;
+  padding: clamp(28px, 3.4vw, 44px);
+  border: 0;
+  border-radius: 36px;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  background:
+    radial-gradient(60% 55% at 100% 0%, color-mix(in srgb, var(--app-accent) 26%, transparent), transparent 70%),
+    radial-gradient(50% 50% at 0% 100%, color-mix(in srgb, var(--app-accent2) 16%, transparent), transparent 70%),
+    var(--app-bg);
+  box-shadow: 0 40px 90px -40px color-mix(in srgb, var(--app-bg) 90%, transparent), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transform-style: preserve-3d;
+  transition: box-shadow 0.5s var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+.app-card-link:hover {
+  box-shadow: 0 50px 110px -40px color-mix(in srgb, var(--app-accent) 55%, transparent), inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.app-card-link:focus-visible {
+  outline: 3px solid var(--app-accent);
+  outline-offset: 4px;
+}
+
+/* light that follows the pointer */
+.app-card-glow {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(420px circle at var(--mx, 70%) var(--my, 10%), color-mix(in srgb, var(--app-accent) 22%, transparent), transparent 65%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.app-card-link:hover .app-card-glow {
+  opacity: 1;
+}
+
+.app-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.app-card-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  box-shadow: 0 16px 34px -14px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.app-card-chip {
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+
+.app-card-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(40px, 4.4vw, 60px);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.app-card-desc {
+  max-width: 34ch;
+  font-size: 17px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app-card-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: 10px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background: var(--app-accent);
+  box-shadow: 0 14px 30px -12px color-mix(in srgb, var(--app-accent) 80%, transparent);
+  transition: transform 0.4s var(--ease-out), gap 0.4s var(--ease-out);
+}
+
+.app-card-cta svg {
+  width: 18px;
+  height: 18px;
+}
+
+.app-card-link:hover .app-card-cta {
+  gap: 14px;
+  transform: translateY(-1px);
+}
+
+/* the app itself, tilted in the corner */
+.app-card-shot {
+  position: absolute;
+  right: -9%;
+  bottom: -12%;
+  z-index: -1;
+  width: 72%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transform: perspective(1400px) rotateY(-16deg) rotateX(8deg) rotateZ(-3deg) translateZ(var(--lift, 0px));
+  transform-origin: 100% 100%;
+  transition: transform 0.9s var(--ease-out);
+}
+
+.app-card-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.app-card-link:hover .app-card-shot {
+  transform: perspective(1400px) rotateY(-10deg) rotateX(5deg) rotateZ(-2deg) translate(-2%, -3%);
+}
+
+/* the next app, still a secret */
+.app-card.is-soon .app-card-link {
+  color: var(--ink);
+  background:
+    radial-gradient(60% 50% at 100% 0%, rgba(169, 139, 255, 0.2), transparent 70%),
+    radial-gradient(60% 50% at 0% 100%, rgba(255, 122, 182, 0.14), transparent 70%),
+    rgba(255, 255, 255, 0.55);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0 0 0 1.5px rgba(20, 21, 29, 0.08), var(--shadow);
+}
+
+.app-card.is-soon .app-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border-radius: 26px;
+  border: 1.5px dashed rgba(20, 21, 29, 0.14);
+  pointer-events: none;
+}
+
+.soon-icon {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--iris);
+  box-shadow: 0 16px 34px -14px rgba(140, 100, 255, 0.7);
+}
+
+.soon-icon svg {
+  width: 34px;
+  height: 34px;
+}
+
+.app-card.is-soon .app-card-chip {
+  color: var(--ink-soft);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 0 0 1px rgba(20, 21, 29, 0.1);
+}
+
+.app-card.is-soon .app-card-desc {
+  color: var(--ink-soft);
+}
+
+.app-card.is-soon .app-card-cta {
+  margin-top: auto;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: inset 0 0 0 1px rgba(20, 21, 29, 0.1), 0 10px 24px -14px rgba(20, 21, 29, 0.3);
+}
+
+.app-card.is-soon .app-card-link {
+  align-content: stretch;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+/* ------------------------------------------------------------------ steps */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 30px 28px 34px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.62);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), var(--shadow);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(320px circle at var(--mx, 50%) var(--my, -40%), rgba(169, 139, 255, 0.18), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.step:hover::before {
+  opacity: 1;
+}
+
+.step-icon {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 18px;
+  border-radius: 18px;
+  color: #fff;
+  background: var(--iris);
+  box-shadow: 0 14px 30px -14px rgba(140, 100, 255, 0.7);
+}
+
+.step:nth-child(2) .step-icon {
+  background: linear-gradient(140deg, #a98bff, #66d4ff);
+}
+
+.step:nth-child(3) .step-icon {
+  background: linear-gradient(140deg, #ff7ab6, #ffb86b);
+}
+
+.step-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.step-num {
+  position: absolute;
+  right: 26px;
+  top: 22px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 54px;
+  letter-spacing: -0.05em;
+  color: rgba(20, 21, 29, 0.06);
+}
+
+.step h3 {
+  font-size: 27px;
+  letter-spacing: -0.03em;
+}
+
+.step p {
+  color: var(--ink-soft);
+}
+
+/* ------------------------------------------------------------------ manifesto */
+
+.manifesto-card {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 26px;
+  padding: clamp(48px, 8vw, 104px) clamp(24px, 6vw, 96px);
+  border-radius: 40px;
+  text-align: center;
+  background: #121320;
+  color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: var(--shadow-lg);
+}
+
+.manifesto-card .eyebrow {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.manifesto-aura {
+  position: absolute;
+  inset: -40%;
+  z-index: -1;
+  background:
+    radial-gradient(30% 30% at 30% 35%, rgba(255, 122, 182, 0.55), transparent 70%),
+    radial-gradient(30% 30% at 70% 40%, rgba(169, 139, 255, 0.6), transparent 70%),
+    radial-gradient(30% 30% at 50% 75%, rgba(102, 212, 255, 0.45), transparent 70%);
+  filter: blur(40px);
+  animation: aura 18s linear infinite;
+  opacity: 0.75;
+}
+
+@keyframes aura {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.manifesto-quote {
+  max-width: 15ch;
+  font-size: clamp(38px, 6vw, 80px);
+  line-height: 1;
+}
+
+.manifesto-quote .iris-text {
+  background: linear-gradient(100deg, #ffa3cd, #c7b2ff 45%, #8fe3ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-style: italic;
+}
+
+.manifesto-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.manifesto-points li {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px 10px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+
+.tick {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%2314151d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' d='m6.5 12.5 3.5 3.5 7.5-8'/%3E%3C/svg%3E") center / 14px no-repeat,
+    linear-gradient(140deg, #8fffd9, #66d4ff);
+}
+
+.manifesto-text {
+  max-width: 600px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.manifesto-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.manifesto-actions .btn-line {
+  color: #fff;
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.28);
+}
+
+/* ------------------------------------------------------------------ responsive */
+
+@media (max-width: 900px) {
+  .steps,
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding: 8px;
+    min-height: 600px;
+  }
+  .hero-stage {
+    border-radius: 26px;
+  }
+  .hero-content {
+    gap: 16px;
+  }
+  .hero-actions .btn {
+    --btn-h: 52px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .scroll-cue {
+    display: none;
+  }
+  .app-card-link {
+    min-height: 0;
+    border-radius: 28px;
+  }
+  .app-card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 17px;
+  }
+  .app-card-desc {
+    font-size: 16px;
+  }
+  .app-card-shot {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    z-index: 0;
+    width: 112%;
+    margin: 18px 0 -22% 4%;
+    transform: perspective(1200px) rotateY(-12deg) rotateX(6deg) rotateZ(-2deg);
+  }
+  .app-card.is-soon .app-card-cta {
+    margin-top: 14px;
+  }
+  .manifesto-card {
+    border-radius: 30px;
+  }
+}

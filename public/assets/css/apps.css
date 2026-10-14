@@ -1,0 +1,162 @@
+/* "Toutes les applis" page: catalogue head, app cards (from hub.css), idea band. */
+
+.apps-hero {
+  position: relative;
+  padding: clamp(140px, 16vw, 200px) 0 clamp(36px, 5vw, 56px);
+}
+
+.apps-aura {
+  position: absolute;
+  inset: 0 0 -520px;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  background:
+    radial-gradient(38% 60% at 12% 30%, rgba(255, 122, 182, 0.16), transparent 70%),
+    radial-gradient(40% 60% at 88% 20%, rgba(102, 212, 255, 0.16), transparent 70%),
+    radial-gradient(40% 50% at 55% 100%, rgba(169, 139, 255, 0.14), transparent 70%);
+}
+
+.apps-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: end;
+  gap: clamp(24px, 5vw, 80px);
+}
+
+.apps-title {
+  margin-top: 14px;
+  font-size: clamp(54px, 9vw, 128px);
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+}
+
+.apps-title .iris-text {
+  font-style: italic;
+  padding-right: 0.06em;
+}
+
+.apps-intro {
+  display: grid;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.apps-intro p {
+  font-size: clamp(17px, 1.5vw, 19px);
+  color: var(--mute);
+}
+
+.apps-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.apps-counts li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 0 0 1px rgba(20, 21, 29, 0.07);
+}
+
+.apps-counts b {
+  font-family: var(--font-display);
+  font-size: 19px;
+  color: var(--ink);
+}
+
+.apps-list {
+  padding-top: 0;
+}
+
+/* a line of details inside each card */
+.app-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.app-card.is-soon .app-card-meta {
+  color: var(--ink-faint);
+}
+
+/* ------------------------------------------------------------------ idea band */
+
+.apps-idea {
+  padding: clamp(40px, 6vw, 80px) 0 clamp(60px, 8vw, 110px);
+}
+
+.idea-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) auto;
+  align-items: center;
+  gap: 32px;
+  padding: clamp(36px, 5vw, 64px);
+  border-radius: 36px;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+  background:
+    radial-gradient(50% 90% at 0% 0%, rgba(255, 122, 182, 0.35), transparent 70%),
+    radial-gradient(50% 90% at 100% 100%, rgba(102, 212, 255, 0.28), transparent 70%),
+    #121320;
+  box-shadow: var(--shadow-lg);
+}
+
+.idea-text {
+  display: grid;
+  gap: 14px;
+}
+
+.idea-text .eyebrow {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.idea-text h2 {
+  font-size: clamp(32px, 4.2vw, 54px);
+  line-height: 1;
+  max-width: 16ch;
+}
+
+.idea-text h2 .iris-text {
+  background: linear-gradient(100deg, #ffa3cd, #c7b2ff 45%, #8fe3ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-style: italic;
+}
+
+.idea-text p {
+  max-width: 52ch;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 17px;
+}
+
+.idea-actions {
+  display: grid;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .apps-head,
+  .idea-card {
+    grid-template-columns: 1fr;
+  }
+  .idea-actions {
+    grid-auto-flow: row;
+    justify-items: start;
+  }
+}

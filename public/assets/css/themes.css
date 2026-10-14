@@ -1,0 +1,25 @@
+/* One palette per app. The app page, the donation page and the launcher use the same colours. */
+
+[data-app='capte-cut'] {
+  --bg: #0f1220;
+  --bg-deep: #0a0d18;
+  --surface: #151a2b;
+  --surface-2: #1c2237;
+  --surface-3: #252c46;
+  --rule: rgba(223, 230, 255, 0.09);
+  --text: #eef1fb;
+  --mute: #8e96b8;
+  --faint: #5d6589;
+  --accent: #ff4f6d;
+  --accent-deep: #e5304f;
+  --accent-2: #34d1b1;
+  --accent-3: #f4b54a;
+  --on-accent: #ffffff;
+  --wave: #dfe6ff;
+  --wave-low: #3b4366;
+  --glass: rgba(21, 26, 43, 0.62);
+  --donate: linear-gradient(115deg, #ff4f6d 0%, #ff6f8f 45%, #ff9a6b 100%);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 16px 40px -16px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 30px 80px -30px rgba(0, 0, 0, 0.8);
+  color-scheme: dark;
+}

@@ -1,0 +1,94 @@
+{
+  "tutos": [
+    {
+      "id": "installer",
+      "group": "installer",
+      "format": "wide",
+      "title": "Installer Capte Cut",
+      "desc": "Du téléchargement au premier lancement, avec le launcher justecoqqo.",
+      "src": "/assets/video/capte-cut/installer.mp4",
+      "poster": "/assets/video/capte-cut/installer.jpg",
+      "duration": "0:47"
+    },
+    {
+      "id": "prise-en-main",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Prise en main en 1 minute",
+      "desc": "Supprime les blancs de ton montage CapCut, du début à la fin.",
+      "src": "/assets/video/capte-cut/prise-en-main.mp4",
+      "poster": "/assets/video/capte-cut/prise-en-main.jpg",
+      "duration": "1:26"
+    },
+    {
+      "id": "pistes",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Choisir les pistes",
+      "desc": "Quelle piste écouter, quelles pistes couper.",
+      "src": "/assets/video/capte-cut/pistes.mp4",
+      "poster": "/assets/video/capte-cut/pistes.jpg",
+      "duration": "0:34"
+    },
+    {
+      "id": "reglages",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Régler la détection",
+      "desc": "Seuil, durée minimale et respiration autour de la parole.",
+      "src": "/assets/video/capte-cut/reglages.mp4",
+      "poster": "/assets/video/capte-cut/reglages.jpg",
+      "duration": "1:02"
+    },
+    {
+      "id": "apercu",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Garder un blanc et voir le résultat",
+      "desc": "Clic sur un blanc, zoom, et aperçu avant / après.",
+      "src": "/assets/video/capte-cut/apercu.mp4",
+      "poster": "/assets/video/capte-cut/apercu.jpg",
+      "duration": "0:45"
+    },
+    {
+      "id": "cut-annuler",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Lancer le cut et annuler",
+      "desc": "Ce qui se passe quand tu cliques, et comment revenir en arrière.",
+      "src": "/assets/video/capte-cut/cut-annuler.mp4",
+      "poster": "/assets/video/capte-cut/cut-annuler.jpg",
+      "duration": "0:41"
+    },
+    {
+      "id": "decouper-seulement",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Découper sans supprimer",
+      "desc": "Pour finir ton montage à la main dans CapCut.",
+      "src": "/assets/video/capte-cut/decouper-seulement.mp4",
+      "poster": "/assets/video/capte-cut/decouper-seulement.jpg",
+      "duration": "0:37"
+    },
+    {
+      "id": "dossier",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Tes projets n’apparaissent pas ?",
+      "desc": "Indique à Capte Cut le dossier de tes projets CapCut.",
+      "src": "/assets/video/capte-cut/dossier.mp4",
+      "poster": "/assets/video/capte-cut/dossier.jpg",
+      "duration": "0:20"
+    },
+    {
+      "id": "prise-en-main-tiktok",
+      "group": "tiktok",
+      "format": "tall",
+      "title": "Capte Cut en 1 minute (format TikTok)",
+      "desc": "La prise en main, en vertical, à partager.",
+      "src": "/assets/video/capte-cut/prise-en-main-tiktok.mp4",
+      "poster": "/assets/video/capte-cut/prise-en-main-tiktok.jpg",
+      "duration": "1:24"
+    }
+  ]
+}

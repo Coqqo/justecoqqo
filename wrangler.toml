@@ -1,0 +1,4 @@
+# Cloudflare Pages: the static site is in public/, the donation API in functions/.
+name = "justecoqqo"
+pages_build_output_dir = "./public"
+compatibility_date = "2026-10-01"

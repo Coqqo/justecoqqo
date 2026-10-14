@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://justecoqqo.fr/sitemap.xml
