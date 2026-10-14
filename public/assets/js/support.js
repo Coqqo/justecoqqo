@@ -1,5 +1,5 @@
 // Donation page: amount picker, Stripe Payment Element (card, Apple Pay, Google Pay), 3D heart.
-import { SITE, fetchCatalog, reducedMotion } from './site.js';
+import { SITE, fetchCatalog, offerReport, reducedMotion } from './site.js';
 
 const MIN_EUROS = 1;
 const MAX_EUROS = 500;
@@ -130,6 +130,7 @@ const setupStripe = async () => {
     await loadScript('https://js.stripe.com/v3/');
   } catch {
     showMessage("Le module de paiement n'a pas pu se charger. Vérifie ta connexion, puis recharge la page.");
+    offerReport('Le module de paiement Stripe ne se charge pas', { where: 'page de don', quiet: true });
     paymentOff();
     payOff.hidden = true;
     return;
@@ -171,6 +172,7 @@ const setupStripe = async () => {
   });
   paymentElement.on('loaderror', () => {
     showMessage("Le paiement n'a pas pu s'afficher. Recharge la page pour réessayer.");
+    offerReport('Le formulaire de paiement ne s’affiche pas', { where: 'page de don', quiet: true });
   });
 
   // Optional anti-bot check (Cloudflare Turnstile)
@@ -222,7 +224,7 @@ form.addEventListener('submit', async (event) => {
         amount: `Le montant doit être entre ${formatEuros(MIN_EUROS)} et ${formatEuros(MAX_EUROS)}.`,
         'bot-check': 'La vérification anti-robots a échoué. Recharge la page et réessaie.',
       };
-      throw new Error(reasons[result.error] || 'Le paiement n\'a pas pu démarrer. Réessaie dans un instant.');
+      throw Object.assign(new Error(reasons[result.error] || 'Le paiement n\'a pas pu démarrer. Réessaie dans un instant.'), { server: result.error !== 'amount', code: result.error || response.status });
     }
 
     const returnUrl = new URL('/soutenir/merci/', window.location.origin);
@@ -237,6 +239,8 @@ form.addEventListener('submit', async (event) => {
     if (error) throw new Error(error.message || 'Le paiement a été refusé.');
   } catch (error) {
     showMessage(error.message);
+    // a refused card is not a bug; a server that does not answer is
+    if (error.server) offerReport(error, { where: 'page de don' });
     if (turnstileWidget !== null) window.turnstile?.reset(turnstileWidget);
   } finally {
     paying = false;

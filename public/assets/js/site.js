@@ -1,6 +1,20 @@
 // Shared behaviour for every page: settings, links, reveals, page transitions, small effects.
 
+import { offerReport, setupReports } from './report.js';
+
 export const SITE = Object.freeze({ ...(window.SITE || {}) });
+
+// "Prévenir Coqqo de l'incident": problems on the site go to the "site" Discord channel
+setupReports({
+  app: 'site',
+  accent: '#8b6dff',
+  send: async (payload) => {
+    const response = await fetch('/api/report', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+    if (!response.ok) throw new Error(String(response.status));
+  },
+});
+export { offerReport };
+if (/introuvable/i.test(document.title)) setTimeout(() => offerReport(`Page introuvable : ${location.pathname}`, { where: 'page introuvable', quiet: true }), 900);
 export const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 

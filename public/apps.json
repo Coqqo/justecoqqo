@@ -25,11 +25,11 @@
         "accent3": "#f4b54a"
       },
       "icon": "/assets/img/capte-cut-256.png",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "package": {
-        "url": "/downloads/capte-cut-1.0.4.tgz",
-        "sha256": "b053c67da20c899f65086aa1f78564c40af467eb5ee95daa246752d1d4a61792",
-        "size": 268605
+        "url": "/downloads/capte-cut-1.0.5.tgz",
+        "sha256": "cdb90353b23c3a31c5710888cc3b1ac52413a56488898f9d8352bfd051ca39a4",
+        "size": 271282
       },
       "components": [
         "ffmpeg"
@@ -72,11 +72,11 @@
         "accent3": "#2fbf8f"
       },
       "icon": "/assets/img/jetranscrit-256.png",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "package": {
-        "url": "/downloads/jetranscrit-1.0.1.tgz",
-        "sha256": "ce152b4d36a4343b559d8f306919c26757f49bba887a13d1bdb1fd92f0a679e9",
-        "size": 9294910
+        "url": "/downloads/jetranscrit-1.0.2.tgz",
+        "sha256": "0b22d074ec4b5171d749c3db5542e1b5c53f5dd4ce6773d473a1289cf48fe729",
+        "size": 9300202
       },
       "components": [
         "ffmpeg",
