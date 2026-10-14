@@ -245,7 +245,7 @@ const tutorials = async () => {
 
   let tutos = [];
   try {
-    const response = await fetch(`/${APP_ID}/tutos.json`, { cache: 'no-cache' });
+    const response = await fetch(document.body.dataset.tutos || `/${APP_ID}/tutos.json`, { cache: 'no-cache' });
     tutos = (await response.json()).tutos || [];
   } catch {
     title.textContent = 'Les tutos arrivent bientôt.';

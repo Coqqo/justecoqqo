@@ -40,6 +40,7 @@
       <nav class="header-nav" aria-label="Sur cette page">
         <a href="#etapes">Comment</a>
         <a href="#fonctions">Fonctions</a>
+        <a href="#tutos">Tutos</a>
         <a href="#faq">Questions</a>
         <a href="#aide">Aide</a>
       </nav>
@@ -82,7 +83,11 @@
               Soutenir
             </a>
           </div>
-          <ul class="app-meta" role="list" data-reveal style="--d:5">
+          <a class="tuto-link" href="#tutos" data-reveal style="--d:5">
+            <span class="tuto-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a.8.8 0 0 0 1.2.7l10.4-6.5a.8.8 0 0 0 0-1.4L9.2 4.8A.8.8 0 0 0 8 5.5Z"/></svg></span>
+            <span><strong>Voir le tuto</strong><small>Installation et prise en main en vidéo</small></span>
+          </a>
+          <ul class="app-meta" role="list" data-reveal style="--d:6">
             <li>Version <span data-app-version>1.0.0</span></li>
             <li>Sans compte, sans pub</li>
             <li>2K et 4K gratuites</li>
@@ -156,6 +161,37 @@
             <h3>Sans compte, sans pub</h3>
             <p>Pas d’inscription, pas de fenêtres louches, pas de limite. Une appli propre, sur ton ordinateur.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tutorials -->
+    <section class="section tutos" id="tutos" aria-labelledby="tutos-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal>Tutos</span>
+          <h2 class="section-title" id="tutos-title" data-reveal style="--d:1">Tout comprendre en vidéo.</h2>
+          <p class="section-lead" data-reveal style="--d:2">Choisis la vidéo que tu veux voir. Elles sont courtes, promis.</p>
+        </div>
+        <div class="tuto-filters" role="group" aria-label="Filtrer les tutos" data-reveal>
+          <button type="button" data-filter="all" aria-pressed="true">Toutes</button>
+          <button type="button" data-filter="installer" aria-pressed="false">Installer</button>
+          <button type="button" data-filter="utiliser" aria-pressed="false">Utiliser</button>
+          <button type="button" data-filter="aide" aria-pressed="false">Si ça bloque</button>
+          <button type="button" data-filter="tiktok" aria-pressed="false">Format TikTok</button>
+        </div>
+        <div class="tuto-layout" data-reveal>
+          <div class="player">
+            <div class="player-frame" data-format="wide">
+              <video class="player-video" controls playsinline preload="metadata"></video>
+            </div>
+            <div class="player-info">
+              <span class="player-step" data-player-step></span>
+              <h3 data-player-title>Chargement des tutos…</h3>
+              <p data-player-desc></p>
+            </div>
+          </div>
+          <ol class="playlist" role="list" data-playlist></ol>
         </div>
       </div>
     </section>

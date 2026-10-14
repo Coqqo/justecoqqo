@@ -1,0 +1,64 @@
+{
+  "tutos": [
+    {
+      "id": "installer",
+      "group": "installer",
+      "format": "wide",
+      "title": "Installer to mp34",
+      "desc": "Du téléchargement au premier lancement, avec le launcher justecoqqo.",
+      "src": "/assets/video/to-mp34/installer.mp4",
+      "poster": "/assets/video/to-mp34/installer.jpg",
+      "duration": "0:43"
+    },
+    {
+      "id": "video-mp4",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Télécharger une vidéo",
+      "desc": "Un lien, la qualité, et c’est dans ton dossier.",
+      "src": "/assets/video/to-mp34/video-mp4.mp4",
+      "poster": "/assets/video/to-mp34/video-mp4.jpg",
+      "duration": "0:52"
+    },
+    {
+      "id": "son-mp3",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Juste le son, en MP3",
+      "desc": "La meilleure qualité, choisie pour toi.",
+      "src": "/assets/video/to-mp34/son-mp3.mp4",
+      "poster": "/assets/video/to-mp34/son-mp3.jpg",
+      "duration": "0:34"
+    },
+    {
+      "id": "dossier",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Choisir le dossier",
+      "desc": "Ranger tes fichiers où tu veux, et le retenir.",
+      "src": "/assets/video/to-mp34/dossier.mp4",
+      "poster": "/assets/video/to-mp34/dossier.jpg",
+      "duration": "0:46"
+    },
+    {
+      "id": "probleme",
+      "group": "aide",
+      "format": "wide",
+      "title": "Si ça ne marche pas",
+      "desc": "Le message d’erreur, l’aide, et prévenir Coqqo de l’incident.",
+      "src": "/assets/video/to-mp34/probleme.mp4",
+      "poster": "/assets/video/to-mp34/probleme.jpg",
+      "duration": "0:43"
+    },
+    {
+      "id": "video-mp4-tiktok",
+      "group": "tiktok",
+      "format": "tall",
+      "title": "to mp34 en 1 minute",
+      "desc": "Télécharger une vidéo, au format vertical.",
+      "src": "/assets/video/to-mp34/video-mp4-tiktok.mp4",
+      "poster": "/assets/video/to-mp34/video-mp4-tiktok.jpg",
+      "duration": "0:51"
+    }
+  ]
+}

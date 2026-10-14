@@ -72,11 +72,11 @@
         "accent3": "#2fbf8f"
       },
       "icon": "/assets/img/jetranscrit-256.png",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "package": {
-        "url": "/downloads/jetranscrit-1.0.6.tgz",
-        "sha256": "117329068ea51138fdb2b6d5952a8e4c31a19ec89c34480eed53ab6f3c3a993e",
-        "size": 9300000
+        "url": "/downloads/jetranscrit-1.0.7.tgz",
+        "sha256": "a3420c60f4f7812bb93fb447def5098bcf51e530f0b29d1cd6d48d366f7b2ea6",
+        "size": 9300003
       },
       "components": [
         "ffmpeg",
@@ -120,11 +120,11 @@
         "accent3": "#3de0e6"
       },
       "icon": "/assets/img/to-mp34-256.png",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "package": {
-        "url": "/downloads/to-mp34-1.0.1.tgz",
-        "sha256": "ceda1e6c5b56ad6219c5841e1f2231a49a036c9859faa0eb8121b171d4bb7e8a",
-        "size": 311200
+        "url": "/downloads/to-mp34-1.0.2.tgz",
+        "sha256": "1e081d6431b10fd7e1915027a81d316be9c98e48c70284c4972370d238313fca",
+        "size": 311257
       },
       "components": [
         "ffmpeg",

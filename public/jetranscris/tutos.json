@@ -1,0 +1,84 @@
+{
+  "tutos": [
+    {
+      "id": "installer",
+      "group": "installer",
+      "format": "wide",
+      "title": "Installer jetranscris",
+      "desc": "Du téléchargement au premier lancement, avec le launcher justecoqqo.",
+      "src": "/assets/video/jetranscris/installer.mp4",
+      "poster": "/assets/video/jetranscris/installer.jpg",
+      "duration": "0:44"
+    },
+    {
+      "id": "prise-en-main",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Prise en main en 1 minute",
+      "desc": "Ta vidéo transcrite voix par voix, du début à la fin.",
+      "src": "/assets/video/jetranscris/prise-en-main.mp4",
+      "poster": "/assets/video/jetranscris/prise-en-main.jpg",
+      "duration": "1:02"
+    },
+    {
+      "id": "voix",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Les voix",
+      "desc": "Renommer, corriger la voix d’une phrase, surligner les passages d’une voix, fusionner.",
+      "src": "/assets/video/jetranscris/voix.mp4",
+      "poster": "/assets/video/jetranscris/voix.jpg",
+      "duration": "0:48"
+    },
+    {
+      "id": "corriger",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Corriger le texte",
+      "desc": "Chercher-remplacer, couper ou recoller une phrase.",
+      "src": "/assets/video/jetranscris/corriger.mp4",
+      "poster": "/assets/video/jetranscris/corriger.jpg",
+      "duration": "0:28"
+    },
+    {
+      "id": "lecture",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Réécouter en suivant le texte",
+      "desc": "Le surlignage façon karaoké, la vitesse et les raccourcis.",
+      "src": "/assets/video/jetranscris/lecture.mp4",
+      "poster": "/assets/video/jetranscris/lecture.jpg",
+      "duration": "0:25"
+    },
+    {
+      "id": "exporter",
+      "group": "utiliser",
+      "format": "wide",
+      "title": "Exporter",
+      "desc": "Tout le texte ou une seule voix, en texte, Word ou sous-titres.",
+      "src": "/assets/video/jetranscris/exporter.mp4",
+      "poster": "/assets/video/jetranscris/exporter.jpg",
+      "duration": "0:39"
+    },
+    {
+      "id": "probleme",
+      "group": "aide",
+      "format": "wide",
+      "title": "Si ça ne marche pas",
+      "desc": "Le message d’erreur, l’aide, et prévenir Coqqo de l’incident.",
+      "src": "/assets/video/jetranscris/probleme.mp4",
+      "poster": "/assets/video/jetranscris/probleme.jpg",
+      "duration": "0:58"
+    },
+    {
+      "id": "prise-en-main-tiktok",
+      "group": "tiktok",
+      "format": "tall",
+      "title": "jetranscris en 1 minute",
+      "desc": "La prise en main, au format vertical.",
+      "src": "/assets/video/jetranscris/prise-en-main-tiktok.mp4",
+      "poster": "/assets/video/jetranscris/prise-en-main-tiktok.jpg",
+      "duration": "1:01"
+    }
+  ]
+}
