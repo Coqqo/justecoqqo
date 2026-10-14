@@ -7,7 +7,7 @@
 const APPS = {
   site: { name: 'Site justecoqqo.fr', color: 0x8b6dff, env: 'DISCORD_WEBHOOK_SITE' },
   'capte-cut': { name: 'Capte Cut', color: 0xff4f6d, env: 'DISCORD_WEBHOOK_CAPTE_CUT' },
-  jetranscrit: { name: 'jetranscrit', color: 0x5a46f0, env: 'DISCORD_WEBHOOK_JETRANSCRIT' },
+  jetranscrit: { name: 'jetranscris', color: 0x5a46f0, env: 'DISCORD_WEBHOOK_JETRANSCRIT' },
   'to-mp34': { name: 'to mp34', color: 0xc8ff4d, env: 'DISCORD_WEBHOOK_TO_MP34' },
 };
 

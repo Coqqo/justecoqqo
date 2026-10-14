@@ -54,9 +54,9 @@
     },
     {
       "id": "jetranscrit",
-      "name": "jetranscrit",
+      "name": "jetranscris",
       "tagline": "Transcris tes vidéos, voix par voix",
-      "page": "/jetranscrit/",
+      "page": "/jetranscris/",
       "status": "available",
       "platforms": [
         "win32-x64"
@@ -72,11 +72,11 @@
         "accent3": "#2fbf8f"
       },
       "icon": "/assets/img/jetranscrit-256.png",
-      "version": "1.0.4",
+      "version": "1.0.6",
       "package": {
-        "url": "/downloads/jetranscrit-1.0.4.tgz",
-        "sha256": "1b41d5d75cce9cea125132ab188bf814c1cf6d9f596436950937e6bf4f25483d",
-        "size": 9299969
+        "url": "/downloads/jetranscrit-1.0.6.tgz",
+        "sha256": "117329068ea51138fdb2b6d5952a8e4c31a19ec89c34480eed53ab6f3c3a993e",
+        "size": 9300000
       },
       "components": [
         "ffmpeg",
@@ -120,11 +120,11 @@
         "accent3": "#3de0e6"
       },
       "icon": "/assets/img/to-mp34-256.png",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "package": {
-        "url": "/downloads/to-mp34-1.0.0.tgz",
-        "sha256": "3cb12d9be2fcc604f36bc74abc3b9b5ababb9a12ea1876aeb8188241008de3c8",
-        "size": 310738
+        "url": "/downloads/to-mp34-1.0.1.tgz",
+        "sha256": "ceda1e6c5b56ad6219c5841e1f2231a49a036c9859faa0eb8121b171d4bb7e8a",
+        "size": 311200
       },
       "components": [
         "ffmpeg",

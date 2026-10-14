@@ -1,4 +1,4 @@
-// The jetranscrit page: a conversation that writes itself, voice by voice, in a loop.
+// The jetranscris page: a conversation that writes itself, voice by voice, in a loop.
 import { reducedMotion } from './site.js';
 
 const VOICES = {

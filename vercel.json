@@ -84,5 +84,17 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/jetranscrit",
+      "destination": "/jetranscris/",
+      "permanent": true
+    },
+    {
+      "source": "/jetranscrit/",
+      "destination": "/jetranscris/",
+      "permanent": true
+    }
   ]
 }
