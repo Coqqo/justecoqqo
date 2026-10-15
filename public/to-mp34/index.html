@@ -60,7 +60,13 @@
           <div class="device" data-tilt>
             <div class="device-bar" aria-hidden="true"><i></i><i></i><i></i><span>to mp34</span></div>
             <div class="device-screen">
-              <img class="app-shot" src="/assets/img/to-mp34/slide-qualite.webp" alt="to mp34 : choix de la qualité, 1080p sélectionné de base" width="1600" height="1000">
+              <video class="app-video" autoplay muted loop playsinline preload="metadata" poster="/assets/video/to-mp34/presentation.jpg">
+                <source src="/assets/video/to-mp34/presentation.mp4" type="video/mp4">
+              </video>
+              <button class="screen-btn" type="button" data-video-toggle aria-label="Mettre la vidéo en pause">
+                <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h3.2v14H7zM13.8 5H17v14h-3.2z"/></svg>
+                <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a.8.8 0 0 0 1.2.7l10.4-6.5a.8.8 0 0 0 0-1.4L9.2 4.8A.8.8 0 0 0 8 5.5Z"/></svg>
+              </button>
             </div>
           </div>
         </div>
